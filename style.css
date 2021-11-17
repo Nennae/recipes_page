@@ -1,0 +1,225 @@
+
+* {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+}
+
+body {
+      font-family: 'Open Sans', sans-serif;
+}
+
+.page-title {
+      font-family: 'Amatic SC', cursive;
+      font-size: 55px;
+      letter-spacing: 2px;
+}
+
+.header {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      padding-top: 40px;
+      box-shadow: 0px 3px 20px 0px rgb(235, 210, 199); 
+}
+
+.main {
+      background: rgb(243, 238, 236);
+      padding: 50px 90px;
+      
+}
+
+.recipes {
+      display: flex;
+      padding: 20px 50px;
+      position: relative;
+}
+
+.muffins {
+      flex-direction: row-reverse;
+}
+
+.recipe-container  {
+      background: white;
+      width: 100%;
+      height: 600px;
+      padding: 50px;
+}
+
+.dish {
+      font-size: 30px;
+      text-align: center;
+      height: 70px;
+      border-bottom: 1px solid  rgb(201, 197, 197);
+}
+
+.list-title {
+      font-size: 25px;
+      font-style: italic;
+      font-weight: normal;
+      margin: 40px auto 20px;
+      font-family: 'Barlow', sans-serif;
+}
+
+.ingredients {
+      list-style: circle;
+      line-height: 2;
+      height: inherit;
+}
+
+.items {
+      margin-left: 20px; 
+      font-size: 18px;
+}
+
+.fact-box {
+      border: 1px solid rgb(245, 162, 129);
+      border-radius: 5px;
+      height: 210px;
+      width: 320px;
+      position: absolute;
+      bottom: 37%;
+      right: 42%;
+      padding-top: 10px;
+      
+}
+
+.muffins .fact-box {
+      left: 66%;
+}
+
+.fact-title {
+      font-size: 20px;
+      margin-left: 20px; 
+}
+
+i {
+      margin-right: 20px;
+      font-size: 30px;
+}
+
+.fact-text {
+      margin: 20px;
+      font-size: 18px;
+      line-height: 1.5;
+      font-style: italic;
+}
+
+.muffins .info-container {
+      left: 833px;
+}
+
+.info-container {
+      width: 320px;
+      height: 80px;
+      border-radius: 5px;
+      background: rgb(216, 240, 216);
+      position: absolute;
+      top: 70%;
+      right: 42%;
+}
+
+.info {
+      display: flex;
+      justify-content: space-around;
+      align-self: center;
+      list-style: none;
+      margin-top: 20px;
+}
+
+.info-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 2;
+}
+
+.info-text i {
+      color: rgb(2, 44, 2);
+      font-size: 20px;
+}
+
+.picture {
+      width: 450px;
+      height: 600px;
+}
+
+.how-to {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 50px;
+}
+
+.how-to-box {
+      background: white;
+      height: 630px;
+      width: 64%;
+}
+
+.how-to-box .list-title {
+      text-align: center;
+      margin: 40px 0;
+}
+
+.directions {
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.8;
+}
+
+.directions .direction-item {
+      counter-increment: list;
+      list-style: none;
+      position: relative;
+}
+.direction-item {
+      margin-bottom: 35px;
+      font-size: 18px;
+}
+
+/* Colors the list numbers */
+.direction-item::before {
+      color: rgb(219, 90, 39);
+      content: counter(list) ".";
+      left: -35px;
+      position: absolute;
+      
+}
+
+.external-links {
+      width: 300px;
+      height: 630px;
+      background: white;
+}
+
+.external-links .list-title {
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Amatic SC', cursive;
+      font-style: normal;
+      font-weight: bold;
+      letter-spacing: 3px;
+}
+
+.recipe-links  {
+      list-style: none;
+      line-height: 3;
+}
+
+.links {
+      object-fit: cover;
+      width: 300px;
+      height: 100px;
+      object-position: 20% 55%;
+}
+
+a:hover {
+      opacity: 0.5;
+}
+
+.link-text {
+      text-align: center;
+      font-size: 18px;
+}
